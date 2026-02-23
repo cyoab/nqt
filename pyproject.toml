@@ -1,0 +1,20 @@
+[project]
+name = "nqt"
+version = "0.1.0"
+description = "Speed up or slow down audio files with pitch preservation"
+readme = "README.md"
+authors = [
+    { name = "Yoab Villarreal", email = "cyoab@vgyco.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+nqt = "nqt.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.9.24,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["pytest", "pydub", "audioop-lts"]
